@@ -1,6 +1,7 @@
 \documentclass{beamer}
  
 \usepackage[utf8]{inputenc}
+\usepackage{minted}
 
 \usetheme{Madrid}
 \usecolortheme{beaver}
@@ -11,18 +12,102 @@
 \date{2019}
  
 \begin{document}
+
  
 \frame{\titlepage}
  
+
 \begin{frame}
 \frametitle{Why the f*** does this exist?}
-Most of us begin our word processing journey with huble intentions - simply
+Most of us begin our word processing journey with huble intentions
 
-$$
+\[
 \text{\textbf{Get the thing typed!}}
-$$
+\]
 
-So why bother with \LaTeX ?
+So why bother with \LaTeX?
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Why the f*** does this exist?}
+
+\begin{enumerate}
+
+    \item It's beautiful.
+
+        \begin{itemize}
+            \item \textit{Especially} for math.
+            \item Try and find a paper on Arxiv not written in \LaTeX.
+        \end{itemize}
+
+    \item It was created by scientists, for scientists.
+
+        \begin{itemize}
+            \item Large and active community.
+            \item Online support is readily found.
+        \end{itemize}
+
+    \item It's powerful; extremely rich package community.
+
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Who's it for?}
+
+\begin{enumerate}
+
+    \item<1-> Created by scientists, for scientists.
+
+        \begin{itemize}
+            \item Journal articles and theses, with or without complex math
+                notation.
+            \item The technical publishing industry.
+            \item Your professors when cooking up problem sets to torture you
+                with.
+        \end{itemize}
+
+    \item<2-> Not a word processor.
+
+        \begin{itemize}
+            \item No spell check \footnote{Technically untrue, see ispell}.
+            \item No complete control over formatting.
+        \end{itemize}
+    \item<3-> "You take care of writing, and we'll take care of presentation."
+
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{How does this work?}
+
+\begin{enumerate}
+
+    \item You specify the input in a source file.
+
+        \begin{itemize}
+            \item Vi/Vim, Emacs, Sublime, \dots
+            \item TeXMaker, TeXStudio, \dots
+        \end{itemize}
+
+    \item LaTeX processes the content and decides how best to typeset it.
+
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\framebox[\linewidth]{\mintinline{latex}{I have a Latin test \textbf{tomorrow},
+        but here I am \dots}}
+
+\vspace{0.5cm}
+
+\framebox[\linewidth]{I have a Latin test \textbf{tomorrow}, but here I am
+    \dots}
+
 \end{frame}
  
 \end{document}

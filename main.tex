@@ -22,7 +22,7 @@
  
 
 \begin{frame}
-\frametitle{Why the f*** does this exist?}
+\frametitle{Why bother?}
 Most of us begin our word processing journey with huble intentions
 
 \[
@@ -35,7 +35,7 @@ So why bother with \LaTeX\@?
 
 
 \begin{frame}
-\frametitle{Why the f*** does this exist?}
+\frametitle{Why bother?}
 
 \begin{enumerate}
 
@@ -54,6 +54,9 @@ So why bother with \LaTeX\@?
         \end{itemize}
 
     \item It's powerful; extremely rich package community.
+    \begin{itemize}
+    \item Almost as ridiculous as python's package system.
+    \end{itemize}
 
 \end{enumerate}
 
@@ -87,7 +90,7 @@ So why bother with \LaTeX\@?
         \item You specify the input in a source file.
             \begin{itemize}
                 \item Vi/Vim, Emacs, Sublime, \dots
-                \item TeXMaker, TeXStudio, \dots
+                \item TeXMaker, TeXStudio, Overleaf, \dots
             \end{itemize}
         \item LaTeX processes the content and decides how best to typeset it.
     \end{enumerate}
@@ -172,7 +175,7 @@ annoying.
 \begin{enumerate}
 \item<1-> You're right; kinda. There's a learning curve for the syntax.
 \item<2-> Describe ``What it is'', not ``How it looks''.
-\item<3-> Let \LaTeX\@ and it's packages do the rest.
+\item<3-> Let \LaTeX\@ and its packages do the rest.
 \end{enumerate}
 
 \end{frame}
@@ -214,6 +217,42 @@ Packages are varied, powerful, and sometimes hilarious.
 Salve, munde! %minted coloring latex in latex
 \end{document}
 \end{minted}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Beginnings}
+
+\begin{minted}{latex}
+\documentclass{article}
+\begin{document}
+Salve, munde! %minted coloring latex in latex
+\end{document}
+\end{minted}
+
+Documentclass is a special command, that basically defines the entire format.
+It takes the formatting you define and derives the typographic form of the pdf
+to reflect the choices you made.
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Beginnings}
+
+\begin{minted}{latex}
+\documentclass{article}
+\begin{document}
+Salve, munde! %minted coloring latex in latex
+\end{document}
+\end{minted}
+
+What exactly is this \mintinline{latex}{\begin{document} \end{document}}? An
+enviornment:
+
+\begin{enumerate}
+\item<1-> Performs an action on a block of text.
+\item<2-> You can make your own!
+\end{enumerate}
 
 \end{frame}
 
